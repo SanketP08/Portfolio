@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Source+Code+Pro:ital,wght@0,400;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&family=Open+Sans&family=PT+Sans:wght@400;700&family=Source+Code+Pro:ital,wght@0,400;1,300;1,400&family=Whisper&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    position: absolute;
+    background-color: rgb(119, 118, 118);
+    font-family: 'PT Sans', sans-serif;
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+}
+
+.sidebar nav {
+    padding: 45px;
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 32px;
+    padding: 33px 0;
+}
+
+/* This is used to remove the hyperlinks ie underlines from the hyperlink */
+.sidebar nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+.main {
+    width: 90vw;
+}
+
+.container {
+    display: flex;
+
+}
+
+.infoContainer {
+    /* background-color: rgb(0, 208, 255);  */
+    height: 58vh;
+    width: 80vw;
+    margin: 144px auto;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.devPic img {
+    height: 60vh;
+
+}
+
+.infoContainer1 {
+    margin: 100px;
+    margin-left: 230px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.contactInfo h2 {
+    margin-bottom: 10px;
+}
+
+.contactInfo h2,
+.contactInfo h3 {
+    margin: 5px 0;
+}
+
+.devInfo {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.hello {
+    font-size: 3.5em;
+    height: auto;
+    color: darkgray;
+}
+
+.name {
+    font-size: 3.5em;
+    font-weight: bold;
+    font-family: 'PT Sans', sans-serif;
+    color: slategray;
+
+}
+
+.about {
+    font-size: 2.5em;
+    color: navy;
+
+}
+
+.moreAbout {
+    font-size: 22px;
+    margin-top: 23px;
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+    color: teal;
+}
+
+.buttons {
+    margin-top: 2.2em;
+
+}
+
+.buttons button {
+    font-size: 10px;
+    padding: 9px 14px;
+    border-radius: 22px;
+    color: white;
+    background-color: dodgerblue;
+    font-weight: bold;
+    margin: 0 3px;
+    cursor: pointer;
+
+}
+
+.buttons button:hover {
+    background-color: white;
+    color: dodgerblue;
+}
+
+.devInfo button {
+    font-size: 10px;
+}
+
+.contactInfo {
+    padding-right: 700px;
+    flex-direction: column;
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.introContainer {
+
+    height: 58vh;
+    width: 80vw;
+}
+
+.introContainer h2 {
+    padding-left: 150px;
+    padding-top: 10px;
+    font-size: 50px;
+    color: navy;
+}
+
+.introContainer p {
+
+    padding-left: 150px;
+    font-size: 20px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.blogContainer {
+
+    height: 58vh;
+    width: 80vw;
+
+}
+
+.blogContainer {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.blogContainer h1 {
+    color: #00796b;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.blogContainer h2 {
+    color: #333;
+}
+
+.blogItem {
+    margin-bottom: 30px;
+}
+
+.blogItem p {
+    text-align: justify;
+    margin: 0 0 20px;
+    font-size: 18px;
+}
+
+.blogItem h2{
+    color: teal;
+}
+
+.skillContainer {
+    background-color: #f5f5f5;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding-left: 150px;
+    font-size: 20px;
+}
+
+.sidebarGo {
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+
+@media (max-width: 500px) {
+
+    .devPic {
+        display: none;
+    }
+
+}
+
+.hamBurger {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+
+}
+
+.cross {
+    margin-left: 155px;
+}
+
+.ham {
+    margin-left: 10px;
+}
+
+.devInfo {
+    font-size: 10px;
+}
